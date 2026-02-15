@@ -57,26 +57,24 @@ platforms:
   sources:
     - id: "toutiao"
       name: "今日头条"
-    - id: "baidu"
-      name: "百度热搜"
-    - id: "wallstreetcn-hot"
-      name: "华尔街见闻"
-    - id: "thepaper"
-      name: "澎湃新闻"
-    - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
-    - id: "cls-hot"
-      name: "财联社热门"
-    - id: "ifeng"
-      name: "凤凰网"
-    - id: "tieba"
-      name: "贴吧"
-    - id: "weibo"
-      name: "微博"
-    - id: "douyin"
-      name: "抖音"
-    - id: "zhihu"
-      name: "知乎"
+    - id: "wallstreetcn-news"
+      name: "华尔街见闻 最新"
+    - id: "mktnews"
+      name: "MKT新闻"
+    - id: "juejin"
+      name: "掘金"
+    - id: "github"
+      name: "GitHub"
+    - id: "hackernews"
+      name: "Hacker News"
+    - id: "solidot"
+      name: "Solidot"
+    - id: "v2ex"
+      name: "V2EX"
+    - id: "sspai"
+      name: "少数派"
+    - id: "producthunt"
+      name: "ProductHunt"
 
 
 
@@ -113,20 +111,161 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
+    - id: "deepmind"
+      name: "DeepMind"
+      url: "https://deepmind.com/blog/feed/basic/"
+
+    - id: "Hugging Face Blog"
+      name: "Hugging Face Blog"
+      url: "https://huggingface.co/blog/feed.xml"
+
+    - id: "baoyu"
+      name: "宝玉的分享"
+      url: "https://baoyu.io/feed.xml"
+
+    - id: "jiqizhixin"
+      name: "机器之心"
+      url: "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml"
+      max_age_days: 1
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
-    
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-      enabled: false                  # 禁用
+      url: "http://feeds.feedburner.com/ruanyifeng"
+
+    - id: "openai"
+      name: "OpenAI Blog"
+      url: "https://openai.com/news/"
+
+    - id: "bilibili"
+      name: "哔哩哔哩技术"
+      url: "https://wechat2rss.bestblogs.dev/feed/3a12ae4fde5bb74aab2fddc9f710a3c057eab82f.xml"
+
+    - id: "bytedance"
+      name: "字节跳动技术"
+      url: "https://wechat2rss.bestblogs.dev/feed/d3a9e4d6f125cc98d1691dbc30cd97fec7ae2d03.xml"
+
+    - id: "jikegongyuan"
+      name: "极客公园"
+      url: "https://wechat2rss.bestblogs.dev/feed/11ea7163fbea99e2ab9fa2812ac3d179574886cc.xml"
+
+    - id: "ali"
+      name: "阿里技术"
+      url: "https://wechat2rss.bestblogs.dev/feed/6535a444e9651fecae3383363be7589acdebe2b6.xml"
+
+    - id: "aiqianxian"
+      name: "AI前线"
+      url: "https://wechat2rss.bestblogs.dev/feed/25185b01482da0f485418ecb92e208b4416712fb.xml"
+
+    - id: "42zhangjing"
+      name: "42章经"
+      url: "https://wechat2rss.bestblogs.dev/feed/f6694726ced4ba3d7c7cd65c6edf2160c5978387.xml"
+
+    - id: "shensiquan"
+      name: "深思圈"
+      url: "https://wechat2rss.bestblogs.dev/feed/3e6fcb56a39b2e18f1036113655d4ff8fe726b62.xml"
+
+    - id: "musingmu"
+      name: "AI Musings by Mu"
+      url: "https://kelvinmu.substack.com/feed"
+
+    - id: "crossing"
+      name: "十字路口crossing"
+      url: "https://wechat2rss.bestblogs.dev/feed/20492a5f2d3637c178c01ab0bab7ed86a4a0995b.xml"
+
+    - id: "deepseek"
+      name: "deepseek技术"
+      url: "https://wechat2rss.bestblogs.dev/feed/1709da4f538d4ce4fb6d7a8ba1a5a1c297919601.xml"
+
+    - id: "guixingren"
+      name: "硅星人Pro"
+      url: "https://wechat2rss.bestblogs.dev/feed/c62ceda9eed269d851802bdbc5f33c4fabbf7462.xml"
+
+    - id: "baijingchuhai"
+      name: "白鲸出海"
+      url: "https://wechat2rss.bestblogs.dev/feed/2b8f03a73a0f2ac92a8ca69c124e5be6f442dbdc.xml"
+      max_age_days: 1
+
+    - id: "kimi"
+      name: "月之暗面 Kimi"
+      url: "https://wechat2rss.bestblogs.dev/feed/c5c43d4bc17bae656763859ed0903bb6314ec6fe.xml"
+
+    - id: "tongyi"
+      name: "通义大模型"
+      url: "https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml"
+
+    - id: "minimax"
+      name: "Minimax 稀宇科技"
+      url: "https://wechat2rss.bestblogs.dev/feed/00306b171f754d463b28cf83f3ba086ad009b430.xml"
+
+    - id: "woyin"
+      name: "沃垠AI"
+      url: "https://wechat2rss.bestblogs.dev/feed/339818dbd5154cecdf5f4161f3391c7038a72bae.xml"
+
+    - id: "sam"
+      name: "Sam Altman(@sama)"
+      url: "https://api.xgo.ing/rss/user/e30d4cd223f44bed9d404807105c8927"
+
+    - id: "anthropic"
+      name: "Anthropic(@AnthropicAI)"
+      url: "https://api.xgo.ing/rss/user/fc28a211471b496682feff329ec616e5"
+
+    - id: "karpathy"
+      name: "Andrej Karpathy(@karpathy)"
+      url: "https://api.xgo.ing/rss/user/edf707b5c0b248579085f66d7a3c5524"
+
+    - id: "groq"
+      name: "Groq Inc(@GroqInc)"
+      url: "https://api.xgo.ing/rss/user/771b32075fe54a83bdb6966de9647b4f"
+
+    - id: "brockman"
+      name: "Greg Brockman(@gdb)"
+      url: "https://api.xgo.ing/rss/user/af19d054e26a49129f23abfa82d9e268"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -159,7 +298,7 @@ report:
                                       # ⚠️ 开启调度系统后，此值会被当前时间段的 report_mode 覆盖
 
 
-  display_mode: "keyword"             # 分组维度: keyword | platform
+  display_mode: "platform"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
                                       # platform: 按平台/来源分组显示
 
@@ -351,7 +490,7 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "deepseek/deepseek-chat"
+  model: "minimax/MiniMax-M2.1"
 
   api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
   
@@ -443,7 +582,7 @@ ai_analysis:
                                       # GitHub Action 部署默认推送约 20 次（每小时推送一次）， 约 0.1 元/天
                                       # Docker 部署默认推送 48 次(每半小时推送一次)， 约 0.2 元/天
 
-  include_rss: false                # 是否包含 RSS 内容进行分析
+  include_rss: true                # 是否包含 RSS 内容进行分析
   
   include_standalone: true          # 是否将独立展示区数据纳入 AI 分析（只需上方 display 区的 standalone 配置了平台/RSS 即可）
 
@@ -462,7 +601,7 @@ ai_analysis:
 # 模型配置见上方 ai 配置段
 # ===============================================================
 ai_translation:
-  enabled: false                    # 是否启用翻译功能
+  enabled: true                    # 是否启用翻译功能
 
   # 翻译目标语言
   # 格式：自然语言描述
